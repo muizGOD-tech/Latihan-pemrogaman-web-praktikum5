@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+font-family: Arial, sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16 px;
+    background: #1f4e79;
+    color: white;
+}
+
+.logo{
+    margin: 0;
+}
+
+nav{
+    display: flex;
+    gap: 16px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+footer{
+    padding: 16px;
+    background: eeeeee;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 16px;
+}
+
+.kartu h3{
+    margin-top: 0;
+}
+
+@media (min-width: 600px){
+    main{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px){
+    main{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 599px){
+    header{
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
+.kartu{
+    border: 1px solid  #ccd;
+    padding: 20px;
+    background-color: aquamarine;
+    border-radius: 16px;
+}
+
+header a{
+    color: black;
+    border: 1px solid #ccd;
+    background-color: white;
+    border-radius: 6px;
+}
